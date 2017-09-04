@@ -1,0 +1,84 @@
+/*quitamos bordes del body*/
+body{
+  margin: 0px;
+}
+.boton {
+  border-radius: 5px;
+  padding: 10px;
+  background: #ff300b;
+}
+.sombra{
+  /*margin-top: 15px;*/
+  border-radius: 5px;
+  padding-bottom: 15px;
+  background: #d12000;
+}
+.menu {
+  padding-right: 20px;
+}
+.fila{
+  /*posiciono mis elementos con en una fila*/
+  display: flex;
+  align-items: center;
+}
+.fila-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  border: 1px dashed red;
+  background: #1c3643;
+  /*altura de imagen platzi*/
+  height: 52px;
+  /*texto del header en negritas*/
+  font-weight: bold;
+}
+/*estilos de anclas*/
+a {
+  text-decoration: none;
+  color: white;
+}
+/*agrego padding a todos los anchor dentro de un menu (mas facil de clicar)*/
+li > a {
+  padding: 10px;
+  /*nota: para utilizar el selector '>' tiene que ser un padre directo del elemento*/
+  /*source: https://www.w3schools.com/cssref/css_selectors.asp*/
+}
+/*coloca una barra despues del elemento*/
+/*esto es un pdeudo elemento*/
+/*Source: https://www.w3schools.com/css/css_pseudo_elements.asp*/
+.separador-barra:after{
+  color: white;
+  content: '|';
+  /*pseudo elementos:
+  https://dev.w3.org/html5/html-author/charref
+  */
+  font-size: 25px;
+  margin: 0px 10px;
+}
+.separador-invisible:after{
+  color: white;
+  content: ' ';
+  font-size: 25px;
+  margin-left: 20px;
+}
+/*Todos los elementos 'li' en un menu de fila tienen un margen*/
+/*.menu .fila li {
+  margin: 0 20px 0 20px;
+}*/
+/*quitamos los puntos del unordered list*/
+ul {
+  list-style-type: none;
+  display: flex;
+ }
+figure{
+  margin: 0 0 0 0;
+  padding-left: 15px;
+}
+figure img {
+  height: 26px;
+}
+.footer {
+  border: 1px dashed red;
+}
