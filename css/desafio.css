@@ -10,7 +10,7 @@ body{
 .sombra{
   /*margin-top: 15px;*/
   border-radius: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   background: #d12000;
 }
 .menu {
@@ -33,6 +33,8 @@ body{
   height: 52px;
   /*texto del header en negritas*/
   font-weight: bold;
+  /*para alinear el boton*/
+  align-items: baseline;
 }
 /*estilos de anclas*/
 a {
@@ -70,7 +72,6 @@ li > a {
 /*quitamos los puntos del unordered list*/
 ul {
   list-style-type: none;
-  display: flex;
  }
 figure{
   margin: 0 0 0 0;
