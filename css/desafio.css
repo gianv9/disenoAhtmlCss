@@ -2,6 +2,39 @@
 body{
   margin: 0px;
 }
+.fila{
+  /*posiciono mis elementos con en una fila*/
+  display: flex;
+  align-items: center;
+}
+.fila-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.separador-barra:after{
+  color: white;
+  content: '|';
+  /*pseudo elementos:
+  https://dev.w3.org/html5/html-author/charref
+  */
+  font-size: 25px;
+  margin: 0px 10px;
+}
+.separador-invisible:after{
+  color: white;
+  content: ' ';
+  font-size: 25px;
+  margin-left: 20px;
+}
+.contenedor-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+
 .boton {
   border-radius: 5px;
   padding: 10px;
@@ -15,16 +48,6 @@ body{
 }
 .menu {
   padding-right: 20px;
-}
-.fila{
-  /*posiciono mis elementos con en una fila*/
-  display: flex;
-  align-items: center;
-}
-.fila-space-between{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .header {
   border: 1px dashed red;
@@ -50,21 +73,6 @@ li > a {
 /*coloca una barra despues del elemento*/
 /*esto es un pdeudo elemento*/
 /*Source: https://www.w3schools.com/css/css_pseudo_elements.asp*/
-.separador-barra:after{
-  color: white;
-  content: '|';
-  /*pseudo elementos:
-  https://dev.w3.org/html5/html-author/charref
-  */
-  font-size: 25px;
-  margin: 0px 10px;
-}
-.separador-invisible:after{
-  color: white;
-  content: ' ';
-  font-size: 25px;
-  margin-left: 20px;
-}
 /*Todos los elementos 'li' en un menu de fila tienen un margen*/
 /*.menu .fila li {
   margin: 0 20px 0 20px;
@@ -82,4 +90,22 @@ figure img {
 }
 .footer {
   border: 1px dashed red;
+}
+.buscar{
+  justify-content: flex-end;
+}
+
+#articulo-portada {
+  background-image: url('../img/imagen1.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+
+/*Convertimos la imagen de la lupa en el boton de busqueda*/
+#magnifying-img{
+  border-radius: 6px;
+  height: 35px;
+}
+#input-buscar{
+  height: 30px;
 }
