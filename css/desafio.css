@@ -2,6 +2,9 @@
 body{
   margin: 0px;
 }
+.avatar{
+  border-radius: 50%;
+}
 .fila{
   /*posiciono mis elementos con en una fila*/
   display: flex;
@@ -11,6 +14,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.fila-align-end{
+  display: flex;
+  align-items: flex-end;
 }
 .separador-barra:after{
   color: white;
@@ -32,6 +40,14 @@ body{
   flex-direction: column;
   align-items: center;
   align-content: space-around;
+}
+.matriz-centrada{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.articulos {
+  padding: 30px;
 }
 
 
@@ -93,19 +109,50 @@ figure img {
 }
 .buscar{
   justify-content: flex-end;
+  margin: 5px 0px;
+}
+.portada{
+  background: #f1f1f1;
+}
+hr.style1{
+	border-top: 1px solid rgba(140, 140, 140, 0.52);
+  /*source:
+  https://codepen.io/ibrahimjabbari/pen/ozinB*/
 }
 
-#articulo-portada {
+.articulo{
+  height: 200px;
+  width: 200px;
+}
+#fondo-portada {
   background-image: url('../img/imagen1.jpg');
   background-size: cover;
   padding: 20px;
+  padding-bottom: 30px;
+  /*unidades vh, vw:*/
+  /*https://devcode.la/tutoriales/unidades-vh-vw-css/*/
+  width: 70vw;
+  height: 70vh;
+}
+
+#articulo-portada{
+  color: rgba(38, 38, 38, 0.77);
+  background-color: rgba(241, 241, 241, 0.51);
+  padding: 30px;
+  width: 30vw;
+  font-size: 20px;
 }
 
 /*Convertimos la imagen de la lupa en el boton de busqueda*/
 #magnifying-img{
   border-radius: 6px;
   height: 35px;
+  cursor: pointer;
 }
 #input-buscar{
   height: 30px;
+  border: 0px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
 }
