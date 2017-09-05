@@ -10,6 +10,10 @@ body{
   display: flex;
   align-items: center;
 }
+.columna {
+  display: flex;
+  flex-direction: column;
+}
 .fila-space-between{
   display: flex;
   align-items: center;
@@ -121,8 +125,13 @@ hr.style1{
 }
 
 .articulo{
-  height: 200px;
-  width: 200px;
+  /*height: 200px;
+  width: 200px;*/
+  display: block;
+  margin: 10px 10px;
+}
+.articulo img {
+  height: 100px;
 }
 #fondo-portada {
   background-image: url('../img/imagen1.jpg');
