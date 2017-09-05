@@ -1,6 +1,8 @@
 /*quitamos bordes del body*/
 body{
+  font-family: 'Montserrat', sans-serif;
   margin: 0px;
+  color: rgba(38, 38, 38, 0.77);
 }
 .avatar{
   border-radius: 50%;
@@ -9,6 +11,12 @@ body{
   /*posiciono mis elementos con en una fila*/
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+.fila-centrada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .columna {
   display: flex;
@@ -60,6 +68,13 @@ body{
   padding: 10px;
   background: #ff300b;
 }
+.boton-caja {
+  background: lightgrey;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: rgba(38, 38, 38, 0.65);
+}
 .sombra{
   /*margin-top: 15px;*/
   border-radius: 5px;
@@ -70,7 +85,7 @@ body{
   padding-right: 20px;
 }
 .header {
-  border: 1px dashed red;
+  /*border: 1px dashed red;*/
   background: #1c3643;
   /*altura de imagen platzi*/
   height: 52px;
@@ -79,7 +94,12 @@ body{
   /*para alinear el boton*/
   align-items: baseline;
 }
-/*estilos de anclas*/
+
+.autor,.fecha {
+  font-family: 'Open Sans', sans-serif;
+}
+
+  /*estilos de anclas*/
 a {
   text-decoration: none;
   color: white;
@@ -109,7 +129,8 @@ figure img {
   height: 26px;
 }
 .footer {
-  border: 1px dashed red;
+  /*border: 1px dashed red*/;
+  padding: 10px 0px 30px 0px;
 }
 .buscar{
   justify-content: flex-end;
@@ -129,9 +150,18 @@ hr.style1{
   width: 200px;*/
   display: block;
   margin: 10px 10px;
+  font-size: 17;
 }
 .articulo img {
-  height: 100px;
+  /*las etiquetas img tienes display inline por defecto*/
+  height: 250px;
+  width: 350px;
+   object-fit: cover;
+   /*https://stackoverflow.com/questions/19776670/how-to-emulate-background-size-cover-on-img*/
+  display: block;
+}
+.articulo span {
+  font-size: 25px;
 }
 #fondo-portada {
   background-image: url('../img/imagen1.jpg');
@@ -143,9 +173,7 @@ hr.style1{
   width: 70vw;
   height: 70vh;
 }
-
 #articulo-portada{
-  color: rgba(38, 38, 38, 0.77);
   background-color: rgba(241, 241, 241, 0.51);
   padding: 30px;
   width: 40vw;
@@ -164,4 +192,11 @@ hr.style1{
   border-radius: 5px;
   padding-left: 10px;
   margin-right: 5px;
+}
+#botones-footer{
+  width: 400px;
+}
+#boton-invisible{
+  background: white;
+  border: 0px;
 }
