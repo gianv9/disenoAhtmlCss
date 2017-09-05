@@ -47,7 +47,7 @@ body{
   justify-content: center;
 }
 .articulos {
-  padding: 30px;
+  padding: 30px 100px;
 }
 
 
@@ -139,7 +139,7 @@ hr.style1{
   color: rgba(38, 38, 38, 0.77);
   background-color: rgba(241, 241, 241, 0.51);
   padding: 30px;
-  width: 30vw;
+  width: 40vw;
   font-size: 20px;
 }
 
