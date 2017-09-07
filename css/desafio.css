@@ -75,12 +75,12 @@ body{
   font-weight: bold;
   color: rgba(38, 38, 38, 0.65);
 }
-.sombra{
-  /*margin-top: 15px;*/
+/*.sombra{
+
   border-radius: 5px;
   padding-bottom: 13px;
   background: #d12000;
-}
+}*/
 .menu {
   padding-right: 20px;
 }
@@ -91,8 +91,7 @@ body{
   height: 52px;
   /*texto del header en negritas*/
   font-weight: bold;
-  /*para alinear el boton*/
-  align-items: baseline;
+  align-items: center;
 }
 
 .autor,.fecha {
@@ -145,12 +144,22 @@ hr.style1{
   https://codepen.io/ibrahimjabbari/pen/ozinB*/
 }
 
+.vertical-ruler {
+    height: 320;
+    align-items: center;
+    border-top: 1px solid rgba(140, 140, 140, 0.52);
+    margin: 10px 0;
+}
+
 .articulo{
   /*height: 200px;
   width: 200px;*/
-  display: block;
-  margin: 10px 10px;
-  font-size: 17;
+  /*display: block;*/
+  margin: 20px 10px;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+
 }
 .articulo img {
   /*las etiquetas img tienes display inline por defecto*/
@@ -161,7 +170,10 @@ hr.style1{
   display: block;
 }
 .articulo span {
+
   font-size: 25px;
+  margin-top: 10px;
+  width: 350px;
 }
 #fondo-portada {
   background-image: url('../img/imagen1.jpg');
