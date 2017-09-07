@@ -74,6 +74,7 @@ body{
   padding: 5px 10px;
   font-weight: bold;
   color: rgba(38, 38, 38, 0.65);
+  cursor: pointer;
 }
 /*.sombra{
 
@@ -175,15 +176,23 @@ hr.style1{
   margin-top: 10px;
   width: 350px;
 }
+
+.articulo a {
+  color: rgba(38, 38, 38, 0.77);
+}
 #fondo-portada {
-  background-image: url('../img/imagen1.jpg');
+  background-image: url('../img/articulos/machine.jpg');
   background-size: cover;
+  background-position: center;
   padding: 20px;
   padding-bottom: 30px;
   /*unidades vh, vw:*/
   /*https://devcode.la/tutoriales/unidades-vh-vw-css/*/
   width: 70vw;
   height: 70vh;
+}
+#fondo-portada a {
+    color: rgba(38, 38, 38, 0.77);
 }
 #articulo-portada{
   background-color: rgba(241, 241, 241, 0.51);
