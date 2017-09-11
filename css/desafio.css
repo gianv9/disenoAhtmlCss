@@ -4,6 +4,9 @@ body{
   margin: 0px;
   color: rgba(38, 38, 38, 0.77);
 }
+.transition {
+  transition: 500ms;/*Aca se aplica esta transicion para todas las propiedades*/
+}
 .avatar{
   border-radius: 50%;
 }
@@ -67,6 +70,7 @@ body{
   border-radius: 5px;
   padding: 10px;
   background: #ff300b;
+
 }
 .boton-caja {
   background: lightgrey;
@@ -76,6 +80,12 @@ body{
   color: rgba(38, 38, 38, 0.65);
   cursor: pointer;
 }
+
+
+.boton:hover{
+  transform: scale(1.2);
+}
+
 /*.sombra{
 
   border-radius: 5px;
@@ -180,6 +190,11 @@ hr.style1{
 .articulo a {
   color: rgba(38, 38, 38, 0.77);
 }
+
+.articulo:hover{
+  transform: scale(1.05);
+}
+
 #fondo-portada {
   background-image: url('../img/articulos/machine.jpg');
   background-size: cover;
@@ -194,6 +209,7 @@ hr.style1{
 #fondo-portada a {
     color: rgba(38, 38, 38, 0.77);
 }
+
 #articulo-portada{
   background-color: rgba(241, 241, 241, 0.51);
   padding: 30px;
@@ -201,11 +217,18 @@ hr.style1{
   font-size: 20px;
 }
 
+#articulo-portada:hover{
+  transform: scale(1.1) translateX(10%) translateY(-10%);
+}
+
 /*Convertimos la imagen de la lupa en el boton de busqueda*/
 #magnifying-img{
   border-radius: 6px;
   height: 35px;
   cursor: pointer;
+}
+#magnifying-img:hover{
+  transform: scale(1.1);
 }
 #input-buscar{
   height: 30px;
